@@ -25,13 +25,8 @@ public class EditMode : MonoBehaviour
 
         if (GetComponent<BoxCollider>().enabled == true)
         {
-
+            WindmillScaling();
         }
-    }
-
-    public void WindmillScaling()
-    {
-
     }
 
     void TurnColliderOn()
@@ -40,5 +35,10 @@ public class EditMode : MonoBehaviour
         {
             GetComponent<BoxCollider>().enabled = true;
         }
+    }
+
+    public void WindmillScaling()
+    {
+
     }
 }

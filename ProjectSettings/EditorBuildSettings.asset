@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Dennis.unity
-    guid: eaed4c6e3564309478d6feae4fd98e38
+    path: Assets/Scenes/MainGame.unity
+    guid: 59b2bd0f9119b4f43bd4e9c730590c8f
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 3ec4977c12d59a143ae861cf65a1ca63,
       type: 2}
