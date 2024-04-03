@@ -72,7 +72,6 @@ MonoBehaviour:
   partToSnap: {fileID: 0}
   previousSnapManager: {fileID: 0}
   otherPart: 0
-  otherEra: 0
 --- !u!1 &1256103453957838023
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,7 +206,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &2374352175912685849
 MonoBehaviour:
