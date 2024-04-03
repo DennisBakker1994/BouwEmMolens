@@ -4650,10 +4650,6 @@ MonoBehaviour:
     m_ActionName: Player/UpAndDown
   - m_PersistentCalls:
       m_Calls: []
-    m_ActionId: 329e7bf1-7a1c-4fd3-904b-356ecf96c8f5
-    m_ActionName: Player/Delete[/Keyboard/q]
-  - m_PersistentCalls:
-      m_Calls: []
     m_ActionId: 3e3b4510-f045-497c-8685-7cb5217d75ad
     m_ActionName: Player/NewUp
   - m_PersistentCalls:

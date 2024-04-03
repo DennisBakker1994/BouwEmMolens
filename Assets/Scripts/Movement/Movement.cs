@@ -37,15 +37,6 @@ public partial class @Movement: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Delete"",
-                    ""type"": ""Button"",
-                    ""id"": ""329e7bf1-7a1c-4fd3-904b-356ecf96c8f5"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""NewUp"",
                     ""type"": ""Value"",
                     ""id"": ""3e3b4510-f045-497c-8685-7cb5217d75ad"",
@@ -64,28 +55,6 @@ public partial class @Movement: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""UpAndDown"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""c35f015c-40f4-4c4b-a930-13c701650ed6"",
-                    ""path"": ""<XRController>{RightHand}/{SecondaryButton}"",
-                    ""interactions"": ""Press"",
-                    ""processors"": """",
-                    ""groups"": ""XR"",
-                    ""action"": ""Delete"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""5c61134f-98de-456c-b5ed-59cfbc177d61"",
-                    ""path"": ""<Keyboard>/q"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Delete"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -707,7 +676,6 @@ public partial class @Movement: IInputActionCollection2, IDisposable
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_UpAndDown = m_Player.FindAction("UpAndDown", throwIfNotFound: true);
-        m_Player_Delete = m_Player.FindAction("Delete", throwIfNotFound: true);
         m_Player_NewUp = m_Player.FindAction("NewUp", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
@@ -783,14 +751,12 @@ public partial class @Movement: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Player;
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
     private readonly InputAction m_Player_UpAndDown;
-    private readonly InputAction m_Player_Delete;
     private readonly InputAction m_Player_NewUp;
     public struct PlayerActions
     {
         private @Movement m_Wrapper;
         public PlayerActions(@Movement wrapper) { m_Wrapper = wrapper; }
         public InputAction @UpAndDown => m_Wrapper.m_Player_UpAndDown;
-        public InputAction @Delete => m_Wrapper.m_Player_Delete;
         public InputAction @NewUp => m_Wrapper.m_Player_NewUp;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
@@ -804,9 +770,6 @@ public partial class @Movement: IInputActionCollection2, IDisposable
             @UpAndDown.started += instance.OnUpAndDown;
             @UpAndDown.performed += instance.OnUpAndDown;
             @UpAndDown.canceled += instance.OnUpAndDown;
-            @Delete.started += instance.OnDelete;
-            @Delete.performed += instance.OnDelete;
-            @Delete.canceled += instance.OnDelete;
             @NewUp.started += instance.OnNewUp;
             @NewUp.performed += instance.OnNewUp;
             @NewUp.canceled += instance.OnNewUp;
@@ -817,9 +780,6 @@ public partial class @Movement: IInputActionCollection2, IDisposable
             @UpAndDown.started -= instance.OnUpAndDown;
             @UpAndDown.performed -= instance.OnUpAndDown;
             @UpAndDown.canceled -= instance.OnUpAndDown;
-            @Delete.started -= instance.OnDelete;
-            @Delete.performed -= instance.OnDelete;
-            @Delete.canceled -= instance.OnDelete;
             @NewUp.started -= instance.OnNewUp;
             @NewUp.performed -= instance.OnNewUp;
             @NewUp.canceled -= instance.OnNewUp;
@@ -1006,7 +966,6 @@ public partial class @Movement: IInputActionCollection2, IDisposable
     public interface IPlayerActions
     {
         void OnUpAndDown(InputAction.CallbackContext context);
-        void OnDelete(InputAction.CallbackContext context);
         void OnNewUp(InputAction.CallbackContext context);
     }
     public interface IUIActions
