@@ -7,7 +7,7 @@ using UnityEngine.XR.OpenXR.Input;
 
 public class Removal2 : MonoBehaviour
 {
-  [SerializeField] public GameObject part;
+    public GameObject part;
    
 
 
