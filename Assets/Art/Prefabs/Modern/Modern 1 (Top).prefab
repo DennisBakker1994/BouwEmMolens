@@ -45,7 +45,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2933475838699151}
-  m_Mesh: {fileID: -5977801105550785883, guid: 2519519bf17418145b06101d8855a448, type: 3}
+  m_Mesh: {fileID: 4821752171653959088, guid: 2519519bf17418145b06101d8855a448, type: 3}
 --- !u!23 &6900054616868440113
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -387,4 +387,3 @@ MonoBehaviour:
   partToSnap: {fileID: 0}
   previousSnapManager: {fileID: 0}
   otherPart: 1
-  otherEra: 1
