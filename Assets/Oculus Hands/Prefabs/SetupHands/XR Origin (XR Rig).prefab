@@ -2596,6 +2596,7 @@ GameObject:
   - component: {fileID: 6960014113778488898}
   - component: {fileID: 1398907982973425894}
   - component: {fileID: 4695130732368457767}
+  - component: {fileID: 860003589773630781}
   m_Layer: 0
   m_Name: Right Controller
   m_TagString: Untagged
@@ -2973,6 +2974,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &860003589773630781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3695521046464442493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c04d09cf611e0c47b4905f8752ff9ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  part: {fileID: 0}
 --- !u!1 &4162845656206750133
 GameObject:
   m_ObjectHideFlags: 0
@@ -5016,6 +5030,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: c1e4b6b1-d82a-485c-9d29-9d42e48df255
     m_ActionName: Touchscreen Gestures/Screen Touch Count
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 860003589773630781}
+        m_TargetAssemblyTypeName: Removal2, Assembly-CSharp
+        m_MethodName: DestroyPart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 5497c1a3-1a50-4596-81b7-1b31812fd2d5
+    m_ActionName: Test/New action[/Keyboard/e]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: XRI Head
