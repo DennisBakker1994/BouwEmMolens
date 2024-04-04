@@ -73,10 +73,12 @@ public class SnapManager : MonoBehaviour
         {
             partToSnap.transform.position = snappingPoint.transform.position;
             partToSnap.GetComponent<Rigidbody>().isKinematic = true;
+            Debug.Log("IsSnapped");
 
             if (previousSnapManager != null)
             {
-                partToSnap.SetParent(previousSnapManager.transform);
+                partToSnap.transform.SetParent(previousSnapManager.transform);
+                Debug.Log("Snapped to Parent");
             }
 
             snappingPoint.GetComponent<SphereCollider>().enabled = false;

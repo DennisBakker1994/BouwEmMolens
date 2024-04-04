@@ -2791,6 +2791,16 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2716075255462924810, guid: d4a37a323b060cf43ac04af25260c83e,
+        type: 3}
+      propertyPath: m_AllowAnchorControl
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3533041679162115755, guid: d4a37a323b060cf43ac04af25260c83e,
+        type: 3}
+      propertyPath: m_AllowAnchorControl
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4635861780156898332, guid: d4a37a323b060cf43ac04af25260c83e,
         type: 3}
       propertyPath: m_BackGroundColor.a
