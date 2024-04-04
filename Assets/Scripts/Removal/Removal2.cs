@@ -7,9 +7,28 @@ using UnityEngine.XR.OpenXR.Input;
 
 public class Removal2 : MonoBehaviour
 {
+    private XRIDefaultInputActions inputActions;
+    private InputAction button;
     public GameObject part;
-   
 
+    private void Awake()
+    {
+        inputActions = new XRIDefaultInputActions();
+        button = inputActions.Test.Newaction;
+    }
+
+    private void OnEnable()
+    {
+        button.Enable();
+    }
+
+    private void Update()
+    {
+
+        if (button.IsPressed()) {
+            DestroyPart();
+        };
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -30,16 +49,11 @@ public class Removal2 : MonoBehaviour
 
 
 
-    public void DestroyPart(InputAction.CallbackContext context)
+    public void DestroyPart()
     {
+        Debug.Log("Destroy");
         Destroy(part);
 
-        Debug.Log("Destroy");
-    }
-
-    void Update()
-    {
-        
     }
 }
 
