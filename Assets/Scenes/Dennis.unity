@@ -241,74 +241,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!1001 &4442164
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3981953513631464463, guid: f5d9d4fb006f1e34280b8c6e4c9a3cb2,
-        type: 3}
-      propertyPath: m_Name
-      value: Traditional Windmill 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5532458716242001203, guid: f5d9d4fb006f1e34280b8c6e4c9a3cb2,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5532458716242001203, guid: f5d9d4fb006f1e34280b8c6e4c9a3cb2,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5532458716242001203, guid: f5d9d4fb006f1e34280b8c6e4c9a3cb2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5532458716242001203, guid: f5d9d4fb006f1e34280b8c6e4c9a3cb2,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5532458716242001203, guid: f5d9d4fb006f1e34280b8c6e4c9a3cb2,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5532458716242001203, guid: f5d9d4fb006f1e34280b8c6e4c9a3cb2,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5532458716242001203, guid: f5d9d4fb006f1e34280b8c6e4c9a3cb2,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5532458716242001203, guid: f5d9d4fb006f1e34280b8c6e4c9a3cb2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5532458716242001203, guid: f5d9d4fb006f1e34280b8c6e4c9a3cb2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5532458716242001203, guid: f5d9d4fb006f1e34280b8c6e4c9a3cb2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f5d9d4fb006f1e34280b8c6e4c9a3cb2, type: 3}
 --- !u!1 &5152068
 GameObject:
   m_ObjectHideFlags: 0
@@ -1612,6 +1544,74 @@ CharacterController:
     type: 3}
   m_PrefabInstance: {fileID: 1658653981015828508}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &901135576
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3981953513631464463, guid: f5d9d4fb006f1e34280b8c6e4c9a3cb2,
+        type: 3}
+      propertyPath: m_Name
+      value: Traditional Windmill 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5532458716242001203, guid: f5d9d4fb006f1e34280b8c6e4c9a3cb2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5532458716242001203, guid: f5d9d4fb006f1e34280b8c6e4c9a3cb2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5532458716242001203, guid: f5d9d4fb006f1e34280b8c6e4c9a3cb2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5532458716242001203, guid: f5d9d4fb006f1e34280b8c6e4c9a3cb2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5532458716242001203, guid: f5d9d4fb006f1e34280b8c6e4c9a3cb2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5532458716242001203, guid: f5d9d4fb006f1e34280b8c6e4c9a3cb2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5532458716242001203, guid: f5d9d4fb006f1e34280b8c6e4c9a3cb2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5532458716242001203, guid: f5d9d4fb006f1e34280b8c6e4c9a3cb2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5532458716242001203, guid: f5d9d4fb006f1e34280b8c6e4c9a3cb2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5532458716242001203, guid: f5d9d4fb006f1e34280b8c6e4c9a3cb2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f5d9d4fb006f1e34280b8c6e4c9a3cb2, type: 3}
 --- !u!1 &916886147
 GameObject:
   m_ObjectHideFlags: 0
@@ -2848,7 +2848,7 @@ SceneRoots:
   - {fileID: 843003745}
   - {fileID: 1690545595}
   - {fileID: 1107394422}
-  - {fileID: 4442164}
+  - {fileID: 901135576}
   - {fileID: 667990556}
   - {fileID: 1504009136}
   - {fileID: 1398965920}

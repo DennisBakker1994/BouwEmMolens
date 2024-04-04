@@ -11,12 +11,12 @@ public class EditMode : MonoBehaviour
 
     public void CheckIfBuildMode()
     {
-        bool canBuildMode = GetComponentInChildren<SnapManager>().canBuildMode;
+        //bool canBuildMode = GetComponentInChildren<SnapManager>().canBuildMode;
 
-        if (canBuildMode == true)
-        {
-            ActivateBuildMode();
-        }
+        //if (canBuildMode == true)
+        //{
+        //    ActivateBuildMode();
+        //}
     }
 
     public void ActivateBuildMode()
