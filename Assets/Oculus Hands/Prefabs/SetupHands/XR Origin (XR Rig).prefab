@@ -2987,6 +2987,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   part: {fileID: 0}
+  deleteclip: {fileID: 8300000, guid: 36da6daa114cea14f851503a169c0a97, type: 3}
+  source: {fileID: 2717400977803618972}
 --- !u!1 &4162845656206750133
 GameObject:
   m_ObjectHideFlags: 0
@@ -4865,7 +4867,8 @@ AudioSource:
   m_GameObject: {fileID: 8764881177861915234}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -1455146240606877133, guid: e6551c361ec9e024097f8048e0c676a0,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1

@@ -10,6 +10,8 @@ public class Removal2 : MonoBehaviour
     private XRIDefaultInputActions inputActions;
     private InputAction button;
     public GameObject part;
+    public AudioClip deleteclip;
+    public AudioSource source;
 
     private void Awake()
     {
@@ -25,13 +27,15 @@ public class Removal2 : MonoBehaviour
     private void Update()
     {
 
-        if (button.IsPressed()) {
+        if (button.IsPressed()) 
+        {
             DestroyPart();
         };
     }
 
     private void OnTriggerEnter(Collider other)
     {
+
         if (other.gameObject.tag == "Windmill")
         {
             Debug.Log("Part");
@@ -51,9 +55,17 @@ public class Removal2 : MonoBehaviour
 
     public void DestroyPart()
     {
+        source.clip = deleteclip;
+        StartCoroutine(PlayClip());
         Debug.Log("Destroy");
         Destroy(part);
 
+    }
+
+    IEnumerator PlayClip()
+    {
+        source.Play();
+        yield return new WaitForSeconds(0.5f);
     }
 }
 

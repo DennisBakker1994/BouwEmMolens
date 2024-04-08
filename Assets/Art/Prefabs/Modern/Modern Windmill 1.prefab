@@ -67,7 +67,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canSnap: 0
-  canBuildMode: 0
   snappingPoint: {fileID: 2523761112272507676}
   partToSnap: {fileID: 0}
   previousSnapManager: {fileID: 0}

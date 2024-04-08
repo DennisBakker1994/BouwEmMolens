@@ -67,12 +67,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canSnap: 0
-  canBuildMode: 0
   snappingPoint: {fileID: 1455315084696454245}
   partToSnap: {fileID: 0}
   previousSnapManager: {fileID: 0}
   otherPart: 1
-  otherEra: 0
 --- !u!1 &3187560823347918216
 GameObject:
   m_ObjectHideFlags: 0
