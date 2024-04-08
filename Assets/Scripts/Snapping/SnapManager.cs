@@ -30,7 +30,6 @@ public class SnapManager : MonoBehaviour
 
             snappingPoint.GetComponent<SphereCollider>().enabled = true;
 
-            // delete part hierzo veel suc6 yippeee :-) 
         }
     }
 
