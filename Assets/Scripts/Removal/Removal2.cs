@@ -55,7 +55,7 @@ public class Removal2 : MonoBehaviour
 
     public void DestroyPart()
     {
-       // source.clip = deleteclip;
+       //  source.clip = deleteclip;
        // source.Play();
         Debug.Log("Destroy");
         Destroy(part);
