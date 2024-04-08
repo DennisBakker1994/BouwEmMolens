@@ -27,7 +27,7 @@ public class Removal2 : MonoBehaviour
     private void Update()
     {
 
-        if (button.IsPressed()) 
+        if (button.IsPressed())
         {
             DestroyPart();
         };
@@ -45,9 +45,9 @@ public class Removal2 : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.gameObject == part)
+        if (other.gameObject == part)
         {
-            part = null; 
+            part = null;
         }
     }
 
@@ -55,17 +55,13 @@ public class Removal2 : MonoBehaviour
 
     public void DestroyPart()
     {
-        source.clip = deleteclip;
-        StartCoroutine(PlayClip());
+       // source.clip = deleteclip;
+       // source.Play();
         Debug.Log("Destroy");
         Destroy(part);
 
     }
-
-    IEnumerator PlayClip()
-    {
-        source.Play();
-        yield return new WaitForSeconds(0.5f);
-    }
 }
+
+   
 
