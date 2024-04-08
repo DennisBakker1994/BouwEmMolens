@@ -1179,6 +1179,7 @@ GameObject:
   - component: {fileID: 791830020}
   - component: {fileID: 791830022}
   - component: {fileID: 791830023}
+  - component: {fileID: 791830024}
   m_Layer: 0
   m_Name: Scripts
   m_TagString: Untagged
@@ -1276,6 +1277,23 @@ MonoBehaviour:
   musicSliderIG: {fileID: 2119453857}
   sfxSliderIG: {fileID: 2119453856}
   mainMenu: {fileID: 166276979}
+--- !u!114 &791830024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791830018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf36e4b15bb918b46957d2fd4664955c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  song1: {fileID: 8300000, guid: cfa78e2090c2aa241a4f36c51e7f24cb, type: 3}
+  song2: {fileID: 8300000, guid: da501c6da3531eb4282454162900a283, type: 3}
+  song3: {fileID: 8300000, guid: 4e7b5196853619a4bbc199c6b70ccb6b, type: 3}
+  song4: {fileID: 8300000, guid: 514a4ecb846d4954dbbfa7b8359a5312, type: 3}
+  source: {fileID: 2065092092}
 --- !u!1001 &792066577
 PrefabInstance:
   m_ObjectHideFlags: 0
