@@ -19,10 +19,11 @@ public class MusicCycle : MonoBehaviour
         {
             songIsPlaying = false;
             songI = Random.Range(0, 4);
-        }
-        if (!songIsPlaying)
-        {
-            ChangeSong();
+
+            if (!songIsPlaying)
+            {
+                ChangeSong();
+            }
         }
     }
 
