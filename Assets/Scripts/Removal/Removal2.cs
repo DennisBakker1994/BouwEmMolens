@@ -7,7 +7,7 @@ using UnityEngine.XR.OpenXR.Input;
 
 public class Removal2 : MonoBehaviour
 {
-    private XRIDefaultInputActions inputActions;
+    private Movement inputActions;
     private InputAction button;
     public GameObject part;
     public AudioClip deleteclip;
@@ -15,7 +15,7 @@ public class Removal2 : MonoBehaviour
 
     private void Awake()
     {
-        inputActions = new XRIDefaultInputActions();
+        inputActions = new Movement();
         button = inputActions.Test.Newaction;
     }
 
