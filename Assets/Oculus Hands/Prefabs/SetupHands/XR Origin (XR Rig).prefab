@@ -1409,6 +1409,7 @@ GameObject:
   - component: {fileID: 5237382265240374604}
   - component: {fileID: 7928905506386402360}
   - component: {fileID: 4181181422955089784}
+  - component: {fileID: 7545594438578074949}
   m_Layer: 0
   m_Name: Right Grab Ray
   m_TagString: Right Hand
@@ -2077,6 +2078,21 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_SortAtRoot: 0
+--- !u!114 &7545594438578074949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168658034701029885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c04d09cf611e0c47b4905f8752ff9ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  part: {fileID: 0}
+  deleteclip: {fileID: 8300000, guid: 36da6daa114cea14f851503a169c0a97, type: 3}
+  source: {fileID: 2717400977803618972}
 --- !u!1 &1174169342899003322
 GameObject:
   m_ObjectHideFlags: 0
@@ -2981,7 +2997,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3695521046464442493}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c04d09cf611e0c47b4905f8752ff9ab, type: 3}
   m_Name: 
@@ -4904,6 +4920,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: aba74823-9b2f-4671-a282-4b2746bc81e1
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e761234f-94b6-4a11-9143-c1887a892686
+    m_ActionName: Test/New action[/Keyboard/e]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
