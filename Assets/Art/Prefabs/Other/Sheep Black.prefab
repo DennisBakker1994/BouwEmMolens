@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &6936020415153454135
+--- !u!1001 &2735496265059380821
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -71,10 +71,58 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a3bad3bfa97f40a41b8546df2bc8d8e2,
         type: 3}
       propertyPath: m_Name
-      value: Sheep (Black)
+      value: Sheep (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a3bad3bfa97f40a41b8546df2bc8d8e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2745632107028619189}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a3bad3bfa97f40a41b8546df2bc8d8e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1375911145351197995}
   m_SourcePrefab: {fileID: 100100000, guid: a3bad3bfa97f40a41b8546df2bc8d8e2, type: 3}
+--- !u!1 &2969849686217233156 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a3bad3bfa97f40a41b8546df2bc8d8e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2735496265059380821}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2745632107028619189
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2969849686217233156}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8c1a45c1e72df5e41b4f3aa8443da34d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1375911145351197995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2969849686217233156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e151b30dba7362b45adf1c46c11c5ac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 2745632107028619189}
