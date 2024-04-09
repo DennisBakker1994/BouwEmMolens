@@ -8,6 +8,8 @@ TagManager:
   - Left Hand
   - Right Hand
   - Modern
+  - Traditional
+  - DeletePossible
   layers:
   - Default
   - TransparentFX
