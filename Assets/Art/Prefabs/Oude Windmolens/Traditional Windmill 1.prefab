@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 8550898464793299869}
   - component: {fileID: 2264479953454309577}
   m_Layer: 0
-  m_Name: Attachment Point
+  m_Name: Attachment Point Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canSnap: 0
+  isSnapped: 0
   snappingPoint: {fileID: 4171617235831475644}
   partToSnap: {fileID: 0}
   previousSnapManager: {fileID: 0}
