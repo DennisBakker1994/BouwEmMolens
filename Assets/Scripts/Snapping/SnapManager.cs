@@ -37,7 +37,7 @@ public class SnapManager : MonoBehaviour
 
     public void NullPreviousSnapManager()
     {
-        if (previousSnapManager != null)
+        if (previousSnapManager != null && this.GetComponentInChildren<SnapManager>().isSnapped == true)
         {
             previousSnapManager.GetComponent<SnapManager>().UnsnapPart();
         }
@@ -50,21 +50,31 @@ public class SnapManager : MonoBehaviour
         {
             canSnap = true;
             
-            AllowSnapPart();
+            if (partToSnap.GetComponentInChildren<SnapManager>().isSnapped == false)
+            {
+                AllowSnapPart();
+            }
         }
 
         if (this.GetComponentInParent<WindmillInformation>().part == WindmillInformation.Part.TOP && otherPart == WindmillInformation.Part.WINDMILLBLADES)
         {
             canSnap = true;
             
-            AllowSnapPart();
+            if (partToSnap.GetComponentInChildren<SnapManager>().isSnapped == false)
+            {
+                AllowSnapPart();
+            }
 
         }
     }
 
+    public void CheckifSnapped()
+    {
+        
+    }
+
     public void AllowSnapPart()
     {
-        Debug.Log("Function Call" + this.GetComponentInParent<Transform>().gameObject.name);
         if (canSnap == true)
         {
             partToSnap.transform.position = snappingPoint.transform.position;
@@ -78,27 +88,52 @@ public class SnapManager : MonoBehaviour
             {
                 partToSnap.GetComponentInChildren<SnapManager>().snappingPoint.GetComponent<SphereCollider>().enabled = true;
             }
+            Debug.Log("Snapped");
 
-            isSnapped = true;
+            partToSnap.GetComponentInChildren<SnapManager>().isSnapped = true;
         }
     }
 
     public void UnsnapPart()
     {
-        if (canSnap == true && isSnapped == true)
+        Debug.Log("Activated UnsnapPart");
+        if (isSnapped == true)
         {
-            partToSnap.transform.position = originalPosition;
+            previousSnapManager = null;
+            canSnap = false;
 
-            partToSnap.GetComponent<Rigidbody>().isKinematic = false;
-
-            partToSnap.transform.SetParent(null);
-
-            snappingPoint.GetComponent<SphereCollider>().enabled = true;
-
-            if (partToSnap.GetComponentInChildren<WindmillInformation>().part != WindmillInformation.Part.WINDMILLBLADES)
+            if (canSnap == false)
             {
-                partToSnap.GetComponentInChildren<SnapManager>().snappingPoint.GetComponent<SphereCollider>().enabled = false;
+                //partToSnap.transform.position = originalPosition;
+
+                this.GetComponent<Rigidbody>().isKinematic = false;
+
+                this.transform.SetParent(null);
+
+                Debug.Log(partToSnap.name);
+
+                snappingPoint.GetComponent<SphereCollider>().enabled = true;
+
+                if (partToSnap.GetComponentInChildren<WindmillInformation>().part != WindmillInformation.Part.WINDMILLBLADES)
+                {
+                    partToSnap.GetComponentInChildren<SnapManager>().snappingPoint.GetComponent<SphereCollider>().enabled = false;
+                }
+            
+                partToSnap = null;
+
             }
+
+            //isSnapped = false;
+
         }
+    }
+    public void Test()
+    {
+        if (previousSnapManager.GetComponent<SnapManager>().isSnapped)
+        {
+            this.GetComponentInParent<Rigidbody>().isKinematic = false;
+        }
+
+        //this.transform.SetParent(null);
     }
 }
