@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4826724564164893288}
   - component: {fileID: 8067497601504969909}
   - component: {fileID: 2387079320831649192}
+  - component: {fileID: 3431829002539504359}
   m_Layer: 7
   m_Name: Oude 2 (Base)
   m_TagString: Windmill
@@ -303,6 +304,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   part: 0
   era: 0
+--- !u!114 &3431829002539504359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2607590912807846349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2be05f5aac7f246408e587ab8df65f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8898286009184787596
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,6 +384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canSnap: 0
   isSnapped: 0
+  windmillCompleted: 0
   snappingPoint: {fileID: 8898286009184787596}
   partToSnap: {fileID: 0}
   previousSnapManager: {fileID: 0}
