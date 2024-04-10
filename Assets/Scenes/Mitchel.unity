@@ -123,6 +123,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!224 &8024204 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7237743717302822523, guid: a3380ddfc66284c46a1a75fc41eee2f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 361242991}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &50559901
 GameObject:
   m_ObjectHideFlags: 0
@@ -5277,7 +5283,7 @@ PrefabInstance:
     - target: {fileID: 8730722973725809704, guid: a3380ddfc66284c46a1a75fc41eee2f4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.1656276
+      value: 0.102
       objectReference: {fileID: 0}
     - target: {fileID: 8730722973725809704, guid: a3380ddfc66284c46a1a75fc41eee2f4,
         type: 3}
@@ -5799,6 +5805,7 @@ GameObject:
   - component: {fileID: 1465774755}
   - component: {fileID: 1465774756}
   - component: {fileID: 1465774757}
+  - component: {fileID: 1465774758}
   m_Layer: 0
   m_Name: Scripts
   m_TagString: Untagged
@@ -5895,6 +5902,37 @@ MonoBehaviour:
   musicSliderIG: {fileID: 0}
   sfxSliderIG: {fileID: 0}
   mainMenu: {fileID: 737904986}
+--- !u!114 &1465774758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465774752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 845b02b2a73a8bb4ea91e9a7f3be60ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pWM1: {fileID: 0}
+  pWM2: {fileID: 0}
+  pWM3: {fileID: 0}
+  pWM4: {fileID: 0}
+  pWM5: {fileID: 0}
+  pWM6: {fileID: 0}
+  pTM1: {fileID: 0}
+  pTM2: {fileID: 0}
+  pTM3: {fileID: 0}
+  pTM4: {fileID: 0}
+  pTM5: {fileID: 0}
+  pTM6: {fileID: 0}
+  pBM1: {fileID: 0}
+  pBM2: {fileID: 0}
+  pBM3: {fileID: 0}
+  pBM4: {fileID: 0}
+  pBM5: {fileID: 0}
+  pBM6: {fileID: 0}
+  spawnpoint: {fileID: 8024204}
 --- !u!1 &1628742240
 GameObject:
   m_ObjectHideFlags: 0
