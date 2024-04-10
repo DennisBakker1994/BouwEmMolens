@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4441336304328998818}
   m_Layer: 7
   m_Name: Oude 3 (Base)
-  m_TagString: Traditional
+  m_TagString: Windmill
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -374,4 +374,5 @@ MonoBehaviour:
   snappingPoint: {fileID: 3474313405377067111}
   partToSnap: {fileID: 0}
   previousSnapManager: {fileID: 0}
+  rb: {fileID: 0}
   otherPart: 0

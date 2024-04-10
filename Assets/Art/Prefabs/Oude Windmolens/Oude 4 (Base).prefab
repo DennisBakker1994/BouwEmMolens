@@ -71,6 +71,7 @@ MonoBehaviour:
   snappingPoint: {fileID: 3941572144868787728}
   partToSnap: {fileID: 0}
   previousSnapManager: {fileID: 0}
+  rb: {fileID: 0}
   otherPart: 0
 --- !u!1 &7465953055019549602
 GameObject:
@@ -89,7 +90,7 @@ GameObject:
   - component: {fileID: 3233994727215808636}
   m_Layer: 7
   m_Name: Oude 4 (Base)
-  m_TagString: Traditional
+  m_TagString: Windmill
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
