@@ -122,15 +122,15 @@ Material:
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
     - _FeatheringEffect: 0.2
-    - _FlowSpeed: 0.25
-    - _FoamDensity: 5
+    - _FlowSpeed: 0.0005
+    - _FoamDensity: 200
     - _FoamSpeed: 1
-    - _FoamThiccness: 5
+    - _FoamThiccness: 6
     - _Foam_Distance: 0.5
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _MaxHeight: 0.25
+    - _MaxHeight: 0.5
     - _Metallic: 0
     - _Noice_Scale: 1
     - _OcclusionStrength: 1
@@ -157,11 +157,11 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FlowDirection: {r: 0.1, g: 0.5, b: 0, a: 0}
-    - _FoamColour: {r: 0.005660295, g: 0.9375607, b: 1, a: 0}
+    - _FoamColour: {r: 0.8490566, g: 0.5976564, b: 0.0048059113, a: 0}
     - _Foam_color: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _VignetteColor: {r: 0, g: 0, b: 0, a: 1}
     - _VignetteColorBlend: {r: 0, g: 0, b: 0, a: 1}
-    - _WaterColour: {r: 0.5490565, g: 0.6993711, b: 1, a: 0}
+    - _WaterColour: {r: 1, g: 0.71449614, b: 0.25471687, a: 0}
     - _Water_Colour: {r: 0, g: 0.5058822, b: 1, a: 1}
   m_BuildTextureStacks: []
