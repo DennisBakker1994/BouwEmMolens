@@ -63,7 +63,7 @@ public class BuildingSpawn : MonoBehaviour
 
     public void BuildTM1()
     {
-        Instantiate(pWM1, spawnpoint);
+        Instantiate(pTM1, spawnpoint);
     }
 
     public void BuildTM2()
