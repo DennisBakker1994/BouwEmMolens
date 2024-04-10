@@ -106,9 +106,9 @@ public class SnapManager : MonoBehaviour
             {
                 //partToSnap.transform.position = originalPosition;
 
-                this.GetComponent<Rigidbody>().isKinematic = false;
+                partToSnap.GetComponent<Rigidbody>().isKinematic = false;
 
-                this.transform.SetParent(null);
+                partToSnap.transform.SetParent(null);
 
                 Debug.Log(partToSnap.name);
 
