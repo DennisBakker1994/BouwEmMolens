@@ -386,4 +386,5 @@ MonoBehaviour:
   snappingPoint: {fileID: 4915614962042831098}
   partToSnap: {fileID: 0}
   previousSnapManager: {fileID: 0}
+  rb: {fileID: 4003257296979405116}
   otherPart: 1

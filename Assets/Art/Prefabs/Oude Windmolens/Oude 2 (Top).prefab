@@ -71,6 +71,7 @@ MonoBehaviour:
   snappingPoint: {fileID: 7164787199017496916}
   partToSnap: {fileID: 0}
   previousSnapManager: {fileID: 0}
+  rb: {fileID: 7078974885931300769}
   otherPart: 1
 --- !u!1 &7189724128486765174
 GameObject:

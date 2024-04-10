@@ -333,6 +333,7 @@ MonoBehaviour:
   snappingPoint: {fileID: 0}
   partToSnap: {fileID: 0}
   previousSnapManager: {fileID: 0}
+  rb: {fileID: 8851951704877673091}
   otherPart: 0
 --- !u!82 &7567574985880467535
 AudioSource:
