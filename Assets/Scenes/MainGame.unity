@@ -2807,29 +2807,14 @@ GameObject:
   - component: {fileID: 1122293221}
   - component: {fileID: 1122293220}
   - component: {fileID: 1122293219}
-  - component: {fileID: 1122293218}
+  - component: {fileID: 1122293223}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Trashcan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1122293218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1122293217}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c04d09cf611e0c47b4905f8752ff9ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  part: {fileID: 0}
-  deleteclip: {fileID: 0}
-  source: {fileID: 0}
 --- !u!65 &1122293219
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2910,12 +2895,24 @@ Transform:
   m_GameObject: {fileID: 1122293217}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 53.826, y: 0.58, z: 45.97}
+  m_LocalPosition: {x: 53.826, y: 0.512, z: 47.194}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1122293223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122293217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf07fa114537144ba66d2bfd16b4351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1163923198
 GameObject:
   m_ObjectHideFlags: 0

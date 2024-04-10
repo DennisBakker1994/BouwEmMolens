@@ -4,19 +4,23 @@ using UnityEngine;
 
 public class DeletePart : MonoBehaviour
 {
-
-    public void OnTriggerEnter(Collider info)
+    //OnCollisionEnter
+    public void OnCollisionEnter(Collision other)
     {
-        if(info.gameObject.CompareTag("DeletePossible"))
+        //If the tag on the gameobject is windmill
+        if (other.gameObject.tag == "Windmill")
         {
-            Debug.Log("TRIGGER ENTER");
-            Destroy(info.gameObject);
+            //Destroy the part
+            Destroy(other.gameObject);
         }
-    }
 
 
-    void Update()
-    {
-        
     }
+    
+
+
+    // if(other.gameobject.tag == "part" || other.gameobject.tag == "part2")
+
 }
+
+
