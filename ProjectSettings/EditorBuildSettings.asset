@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Dennis.unity
-    guid: eaed4c6e3564309478d6feae4fd98e38
-  - enabled: 1
     path: Assets/Scenes/MainGame.unity
     guid: 59b2bd0f9119b4f43bd4e9c730590c8f
   m_configObjects:

@@ -2,21 +2,18 @@ using UnityEngine;
 
 public class SnapManager : MonoBehaviour
 {
-    [Header("Variable")]
+    [Header("Bool")]
     public bool canSnap;
     public bool isSnapped;
-    Vector3 originalPosition;
+    public bool windmillCompleted;
+
+    [Header("Attributes")]
     public GameObject snappingPoint;
     public Transform partToSnap;
     public GameObject previousSnapManager;
     public Rigidbody rb;
 
     public WindmillInformation.Part otherPart;
-
-    private void Start()
-    {
-        originalPosition = gameObject.GetComponentInParent<Transform>().transform.position;
-    }
 
     public void OnTriggerEnter(Collider other)
     {
@@ -40,14 +37,6 @@ public class SnapManager : MonoBehaviour
         }
     }
 
-    public void NullPreviousSnapManager()
-    {
-        if (previousSnapManager != null && isSnapped == true)
-        {
-            previousSnapManager.GetComponent<SnapManager>().UnsnapPart();
-        }
-    }
-
     public void CheckIfCanSnap()
     {
 
@@ -64,24 +53,20 @@ public class SnapManager : MonoBehaviour
         if (this.GetComponentInParent<WindmillInformation>().part == WindmillInformation.Part.TOP && otherPart == WindmillInformation.Part.WINDMILLBLADES)
         {
             canSnap = true;
-            
+
             if (partToSnap.GetComponentInChildren<SnapManager>().isSnapped == false)
             {
                 AllowSnapPart();
             }
-
         }
     }
 
-    public void CheckifSnapped()
-    {
-        
-    }
 
     public void AllowSnapPart()
     {
         if (canSnap == true)
         {
+            windmillCompleted = false;
             partToSnap.transform.position = snappingPoint.transform.position;
             partToSnap.GetComponent<Rigidbody>().isKinematic = true;
 
@@ -102,6 +87,7 @@ public class SnapManager : MonoBehaviour
     {
         if (isSnapped == true)
         {
+            windmillCompleted = false;
             previousSnapManager.GetComponent<SnapManager>().partToSnap = null;
             previousSnapManager.GetComponentInChildren<SnapManager>().snappingPoint.GetComponent<SphereCollider>().enabled = true;
             previousSnapManager = null;
@@ -118,5 +104,10 @@ public class SnapManager : MonoBehaviour
             isSnapped = false;
 
         }
+    }
+
+    public void WindmillCompletionCheck()
+    {
+        windmillCompleted = true;
     }
 }
