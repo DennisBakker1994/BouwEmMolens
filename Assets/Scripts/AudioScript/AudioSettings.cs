@@ -100,7 +100,7 @@ public class AudioSettings : MonoBehaviour
     {
         if (mainMenu.activeInHierarchy == true)
         {
-            float volumeMusic = musicSliderIG.value;
+            float volumeMusic = musicSlider.value;
 
             audioMixer.SetFloat("MusicP", Mathf.Log10(volumeMusic) * 20);
 
