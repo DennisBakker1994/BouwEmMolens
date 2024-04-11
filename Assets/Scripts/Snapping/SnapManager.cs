@@ -94,6 +94,8 @@ public class SnapManager : MonoBehaviour
     {
         if (isSnapped == true)
         {
+            source.clip = clipUnSnap;
+            source.Play();
 
             previousSnapManager.GetComponent<SnapManager>().partToSnap = null;
             previousSnapManager.GetComponentInChildren<SnapManager>().snappingPoint.GetComponent<SphereCollider>().enabled = true;
