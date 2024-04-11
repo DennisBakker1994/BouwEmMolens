@@ -11,7 +11,7 @@ public class BuildingCycle : MonoBehaviour
     public void ChangeIntPlus()
     {
 
-        if (buildingStyle == builds.Length -1)
+        if (buildingStyle == builds.Length - 1)
         {
             buildingStyle = 0;
 
@@ -21,10 +21,11 @@ public class BuildingCycle : MonoBehaviour
         }
         else
         {
-            buildingStyle ++;
+            buildingStyle++;
 
             SetAllToFalse();
             builds[buildingStyle].SetActive(true);
+        }
     }
 
     public void ChangeIntMinus()
