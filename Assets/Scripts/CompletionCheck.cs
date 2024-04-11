@@ -13,13 +13,13 @@ public class CompletionCheck : MonoBehaviour
     {
         if (GetComponentInChildren<SnapManager>().windmillCompleted == true)
         {
-            Debug.Log("1");
+
             source.clip = clip;
             source.Play();
 
             animator.Play("New State 0");
 
-
+            Debug.Log("1");
         }
     }
 }
