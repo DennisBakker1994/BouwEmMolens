@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 1847935267251047233}
   - component: {fileID: 4392229854207133644}
   - component: {fileID: -5988609994098103297}
+  - component: {fileID: -6949851219120309256}
   m_Layer: 7
   m_Name: Oude 3 (Wieken)
   m_TagString: Windmill
@@ -357,7 +358,8 @@ AudioSource:
   m_GameObject: {fileID: 453782189558279685}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -1455146240606877133, guid: e6551c361ec9e024097f8048e0c676a0,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 7c8fbef84671e1147b19fd1fe63869fd, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -444,3 +446,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &-6949851219120309256
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453782189558279685}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4247c2630c3640e479fdcc2e00426569, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

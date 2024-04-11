@@ -390,3 +390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2be05f5aac7f246408e587ab8df65f7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  source: {fileID: 7567574985880467535, guid: 77bb1aff0e6713741be70e1ff10e54d7, type: 3}
+  clip: {fileID: 8300000, guid: 7c8fbef84671e1147b19fd1fe63869fd, type: 3}
+  animator: {fileID: 6351189140121729575, guid: 77bb1aff0e6713741be70e1ff10e54d7,
+    type: 3}
