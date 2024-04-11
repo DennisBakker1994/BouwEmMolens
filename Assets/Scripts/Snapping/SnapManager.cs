@@ -15,6 +15,11 @@ public class SnapManager : MonoBehaviour
 
     public WindmillInformation.Part otherPart;
 
+    [Header("Audio")]
+    public AudioSource source;
+    public AudioClip clipSnap;
+    public AudioClip clipUnSnap;
+
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Windmill")
@@ -66,6 +71,10 @@ public class SnapManager : MonoBehaviour
     {
         if (canSnap == true)
         {
+            source.clip = clipSnap;
+            source.Play();
+
+
             windmillCompleted = false;
             partToSnap.transform.position = snappingPoint.transform.position;
             partToSnap.GetComponent<Rigidbody>().isKinematic = true;
@@ -87,6 +96,9 @@ public class SnapManager : MonoBehaviour
     {
         if (isSnapped == true)
         {
+            source.clip = clipUnSnap;
+            source.Play();
+
             windmillCompleted = false;
             previousSnapManager.GetComponent<SnapManager>().partToSnap = null;
             previousSnapManager.GetComponentInChildren<SnapManager>().snappingPoint.GetComponent<SphereCollider>().enabled = true;

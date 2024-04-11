@@ -411,3 +411,6 @@ MonoBehaviour:
   previousSnapManager: {fileID: 0}
   rb: {fileID: 5837114947388191852}
   otherPart: 1
+  source: {fileID: 2717400977803618972, guid: d4a37a323b060cf43ac04af25260c83e, type: 3}
+  clipSnap: {fileID: 8300000, guid: db6deaadd9b9ba24090511ee456fca5f, type: 3}
+  clipUnSnap: {fileID: 8300000, guid: 2fd9927ce70ebfa43be1bf0ef40cb920, type: 3}
