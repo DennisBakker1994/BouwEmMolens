@@ -4,22 +4,19 @@ using UnityEngine;
 
 public class DeletePart : MonoBehaviour
 {
-    //OnCollisionEnter
+    public AudioSource source;
+    public AudioClip clip;
+
     public void OnCollisionEnter(Collision other)
     {
-        //If the tag on the gameobject is windmill
         if (other.gameObject.tag == "Windmill")
         {
-            //Destroy the part
+            source.clip = clip;
+            source.Play();
+
             Destroy(other.gameObject);
         }
-
-
     }
-    
-
-
-    // if(other.gameobject.tag == "part" || other.gameobject.tag == "part2")
 
 }
 
