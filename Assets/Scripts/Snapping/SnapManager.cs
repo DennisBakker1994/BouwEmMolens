@@ -5,7 +5,6 @@ public class SnapManager : MonoBehaviour
     [Header("Bool")]
     public bool canSnap;
     public bool isSnapped;
-    public bool windmillCompleted;
 
     [Header("Attributes")]
     public GameObject snappingPoint;
@@ -75,7 +74,6 @@ public class SnapManager : MonoBehaviour
             source.Play();
 
 
-            windmillCompleted = false;
             partToSnap.transform.position = snappingPoint.transform.position;
             partToSnap.GetComponent<Rigidbody>().isKinematic = true;
 
@@ -99,7 +97,6 @@ public class SnapManager : MonoBehaviour
             source.clip = clipUnSnap;
             source.Play();
 
-            windmillCompleted = false;
             previousSnapManager.GetComponent<SnapManager>().partToSnap = null;
             previousSnapManager.GetComponentInChildren<SnapManager>().snappingPoint.GetComponent<SphereCollider>().enabled = true;
             previousSnapManager = null;
@@ -116,10 +113,5 @@ public class SnapManager : MonoBehaviour
             isSnapped = false;
 
         }
-    }
-
-    public void WindmillCompletionCheck()
-    {
-        windmillCompleted = true;
     }
 }
