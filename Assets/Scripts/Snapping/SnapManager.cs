@@ -119,4 +119,12 @@ public class SnapManager : MonoBehaviour
     {
         windmillCompleted = true;
     }
+
+    public void PlayWindmillSound()
+    {
+        if (windmillCompleted == true)
+        {
+            //Play Sound
+        }
+    }
 }
