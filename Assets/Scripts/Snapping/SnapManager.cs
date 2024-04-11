@@ -5,6 +5,7 @@ public class SnapManager : MonoBehaviour
     [Header("Bool")]
     public bool canSnap;
     public bool isSnapped;
+    public bool windmillCompleted;
 
     [Header("Attributes")]
     public GameObject snappingPoint;
@@ -73,7 +74,6 @@ public class SnapManager : MonoBehaviour
             source.clip = clipSnap;
             source.Play();
 
-
             partToSnap.transform.position = snappingPoint.transform.position;
             partToSnap.GetComponent<Rigidbody>().isKinematic = true;
 
@@ -111,7 +111,12 @@ public class SnapManager : MonoBehaviour
             }
 
             isSnapped = false;
-
+            windmillCompleted = false;
         }
+    }
+
+    public void WindmillCompleted()
+    {
+        windmillCompleted = true;
     }
 }
