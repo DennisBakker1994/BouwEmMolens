@@ -315,7 +315,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 8428880430655828100}
         m_TargetAssemblyTypeName: SnapManager, Assembly-CSharp
-        m_MethodName: WindmillCompletionCheck
+        m_MethodName: WindmillCompleted
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

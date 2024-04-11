@@ -124,7 +124,7 @@ public class SnapManager : MonoBehaviour
     {
         if (windmillCompleted == true)
         {
-            //Play Sound
+            GetComponent<AudioSource>().Play();
         }
     }
 }
