@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1048850100441876482}
   - component: {fileID: 1986378560331939812}
   - component: {fileID: 4784899942749620723}
-  - component: {fileID: 636514640778944206}
+  - component: {fileID: 5899816412508057035}
   m_Layer: 7
   m_Name: Oude 1 (Base)
   m_TagString: Windmill
@@ -305,7 +305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   part: 0
   era: 0
---- !u!114 &636514640778944206
+--- !u!114 &5899816412508057035
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -314,13 +314,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1401961645413644114}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2be05f5aac7f246408e587ab8df65f7f, type: 3}
+  m_Script: {fileID: 11500000, guid: ce5ca3d92d1553e4688ddfb49314eb4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: -2802137334318018891, guid: 923069b947e82a348af4e58f042607d0, type: 3}
-  clip: {fileID: 8300000, guid: 7c8fbef84671e1147b19fd1fe63869fd, type: 3}
-  animator: {fileID: 2702315649466818243, guid: 923069b947e82a348af4e58f042607d0,
-    type: 3}
+  source: {fileID: 2717400977803618972, guid: d4a37a323b060cf43ac04af25260c83e, type: 3}
+  clip: {fileID: 8300000, guid: 77389a883dd16524d855783dbeabb846, type: 3}
+  ps: {fileID: 308532992148227536}
 --- !u!1 &7936514215255711198
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,7 +388,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canSnap: 0
   isSnapped: 0
-  windmillCompleted: 0
   snappingPoint: {fileID: 7936514215255711198}
   partToSnap: {fileID: 0}
   previousSnapManager: {fileID: 0}
@@ -466,6 +464,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1d2952fc22255147a0a47d4bcf715ee, type: 3}
+--- !u!198 &308532992148227536 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3911172426994716627, guid: a1d2952fc22255147a0a47d4bcf715ee,
+    type: 3}
+  m_PrefabInstance: {fileID: 3607215654860048899}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4706101813128734146 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8304647801622851521, guid: a1d2952fc22255147a0a47d4bcf715ee,

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4826724564164893288}
   - component: {fileID: 8067497601504969909}
   - component: {fileID: 2387079320831649192}
-  - component: {fileID: 3431829002539504359}
+  - component: {fileID: 2933439910877509744}
   m_Layer: 7
   m_Name: Oude 2 (Base)
   m_TagString: Windmill
@@ -305,7 +305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   part: 0
   era: 0
---- !u!114 &3431829002539504359
+--- !u!114 &2933439910877509744
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -314,13 +314,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2607590912807846349}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2be05f5aac7f246408e587ab8df65f7f, type: 3}
+  m_Script: {fileID: 11500000, guid: ce5ca3d92d1553e4688ddfb49314eb4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: 4829749280940131664, guid: 68e0fd7492a04364a97405567ec37f48, type: 3}
-  clip: {fileID: 8300000, guid: 7c8fbef84671e1147b19fd1fe63869fd, type: 3}
-  animator: {fileID: -7261236639980630725, guid: 68e0fd7492a04364a97405567ec37f48,
-    type: 3}
+  source: {fileID: 2717400977803618972, guid: d4a37a323b060cf43ac04af25260c83e, type: 3}
+  clip: {fileID: 8300000, guid: 77389a883dd16524d855783dbeabb846, type: 3}
+  ps: {fileID: 8868252448649120406}
 --- !u!1 &8898286009184787596
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,7 +388,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canSnap: 0
   isSnapped: 0
-  windmillCompleted: 0
   snappingPoint: {fileID: 8898286009184787596}
   partToSnap: {fileID: 0}
   previousSnapManager: {fileID: 0}
@@ -469,6 +467,12 @@ PrefabInstance:
 --- !u!4 &4473502870907382404 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8304647801622851521, guid: a1d2952fc22255147a0a47d4bcf715ee,
+    type: 3}
+  m_PrefabInstance: {fileID: 5572388719134672197}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8868252448649120406 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3911172426994716627, guid: a1d2952fc22255147a0a47d4bcf715ee,
     type: 3}
   m_PrefabInstance: {fileID: 5572388719134672197}
   m_PrefabAsset: {fileID: 0}

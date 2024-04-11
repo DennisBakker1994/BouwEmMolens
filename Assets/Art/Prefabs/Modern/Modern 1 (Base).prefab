@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2808159971009322105}
   - component: {fileID: 4667813607723922036}
   - component: {fileID: 4701940805097442814}
+  - component: {fileID: 1899647891260776514}
   m_Layer: 7
   m_Name: Modern 1 (Base)
   m_TagString: Windmill
@@ -321,6 +322,21 @@ MonoBehaviour:
   clip: {fileID: 8300000, guid: bde5df19faf35d54ba389ae42608a25c, type: 3}
   animator: {fileID: 5856090398146749218, guid: d3299d9c78bfa69429e1410a5dd24a63,
     type: 3}
+--- !u!114 &1899647891260776514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5537773322437168031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce5ca3d92d1553e4688ddfb49314eb4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 0}
+  clip: {fileID: 8300000, guid: 77389a883dd16524d855783dbeabb846, type: 3}
+  ps: {fileID: 2598240395758103030}
 --- !u!1 &6678934265922211887
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,6 +482,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1d2952fc22255147a0a47d4bcf715ee, type: 3}
+--- !u!198 &2598240395758103030 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3911172426994716627, guid: a1d2952fc22255147a0a47d4bcf715ee,
+    type: 3}
+  m_PrefabInstance: {fileID: 1317737499424581157}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6992263291739081188 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8304647801622851521, guid: a1d2952fc22255147a0a47d4bcf715ee,
