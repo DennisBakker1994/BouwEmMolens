@@ -10,9 +10,12 @@ public class PlacementSoundAndParticle : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        source.clip = clip;
-        source.Play();
+        if(collision.gameObject.tag == "Ter")
+        {
+            source.clip = clip;
+            source.Play();
 
-        ps.Play();
+            ps.Play();
+        }
     }
 }
