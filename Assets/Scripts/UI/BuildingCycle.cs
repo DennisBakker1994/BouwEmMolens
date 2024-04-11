@@ -17,7 +17,6 @@ public class BuildingCycle : MonoBehaviour
 
             SetAllToFalse();
             builds[buildingStyle].SetActive(true);
-            Debug.Log(buildingStyle);
 
         }
         else
@@ -26,8 +25,6 @@ public class BuildingCycle : MonoBehaviour
 
             SetAllToFalse();
             builds[buildingStyle].SetActive(true);
-            Debug.Log(buildingStyle);
-        }
     }
 
     public void ChangeIntMinus()
