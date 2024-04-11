@@ -71,8 +71,8 @@ public class SnapManager : MonoBehaviour
     {
         if (canSnap == true)
         {
-            /*source.clip = clipSnap;
-            source.Play();*/
+            source.clip = clipSnap;
+            source.Play();
 
             partToSnap.transform.position = snappingPoint.transform.position;
             partToSnap.GetComponent<Rigidbody>().isKinematic = true;
@@ -94,8 +94,6 @@ public class SnapManager : MonoBehaviour
     {
         if (isSnapped == true)
         {
-            /*source.clip = clipUnSnap;
-            source.Play();*/
 
             previousSnapManager.GetComponent<SnapManager>().partToSnap = null;
             previousSnapManager.GetComponentInChildren<SnapManager>().snappingPoint.GetComponent<SphereCollider>().enabled = true;
