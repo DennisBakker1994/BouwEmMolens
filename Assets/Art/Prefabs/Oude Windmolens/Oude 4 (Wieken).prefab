@@ -487,7 +487,7 @@ MonoBehaviour:
   snappingPoint: {fileID: 0}
   partToSnap: {fileID: 0}
   previousSnapManager: {fileID: 0}
-  rb: {fileID: 0}
+  rb: {fileID: 3516023290908381570}
   otherPart: 0
   source: {fileID: 0}
   clipSnap: {fileID: 0}
